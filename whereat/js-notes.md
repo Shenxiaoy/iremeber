@@ -1,9 +1,9 @@
 
-## 获取客服端ip地址
-------------------
+## 获取客户端ip地址
 
 1、使用WebRTC(Web Real-Time Communications),是一项实时通讯技术，可以使用WebRTC获取ip地址。
-> WebRTC MDN API 地址 ：https://developer.mozilla.org/zh-CN/docs/Web/API/WebRTC_API
+> WebRTC MDN API 地址 ：https://developer.mozilla.org/zh-CN/docs/Web/API/WebRTC_API。
+
 > IE 浏览器可以通过ActiveObject 运行获取ip地址
 
 ```code
@@ -95,6 +95,6 @@ var server = app.listen(8081, '0.0.0.0',function () {
 })
 
 ```
-## 2
-----------------------
+## --
+
 
