@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>history 2</title>
+</head>
+<body>
+<p>22222222222</p>
+<button id="but">添加history</button>
+<div>
+    <a href="./history1.html">history 1</a>
+    <a href="./history3.html">history 3</a>
+</div>
+<script>
+   var but = document.getElementById('but')
+    but.onclick = function() {
+     console.log(11111111111)
+      history.pushState({name: 'history1'}, 'page1', 'history1.html')
+    }
+
+</script>
+</body>
+</html>
