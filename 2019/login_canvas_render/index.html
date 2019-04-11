@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="./scene.js"></script>
+    <script src="./player.bundle.js"></script>
+    <style>
+        body {margin: 0; padding: 0;}
+        .login-content {
+            width: 400px;
+            height: 300px;
+            /*border: 1px solid #eee;*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(189,195,199, .1);
+
+        }
+        .content-wrap p {
+            width: 255px;
+        }
+        .content-wrap {
+            position: absolute;
+            border-radius: 2px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        input {
+            border-radius: 2px;
+            width: 203px;
+            outline: none;
+            height: 28px;
+            padding: 0;
+            border: none;
+            background: rgba(255, 255, 255, .1);
+        }
+        button {
+            outline: none;
+            height: 30px;
+            width: 50px;
+            line-height: 30px;
+            background: #16a085;
+            color: white;
+            padding: 0;
+            border: none;
+            border-radius: 3px;
+
+
+        }
+    </style>
+</head>
+<body>
+<div class="login-content">
+    <div class="content-wrap">
+        <p><label for="username">账号：</label><input id="username" type="text"></p>
+        <p><label for="password">密码：</label><input id="password" type="password"></p>
+        <p style="text-align: right"><button>登录</button></p>
+    </div>
+</div>
+    <div id="app"></div>
+
+    <script>
+        if (window.runGenScene) {
+            window.runGenScene();
+        } else {
+            console.error('Scene not found')
+        }
+    </script>
+</body>
+</html>
