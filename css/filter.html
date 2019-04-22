@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模糊</title>
+    <style>
+        .box {
+            max-width: 200px;
+            height: 150px;
+            background: seagreen;
+            background-image: url("../img/276.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            color: slateblue;
+        }
+        .box1:hover {
+            filter: blur(3px);
+            cursor: pointer;
+        }
+        .box2:hover {
+            filter: grayscale(1);
+            cursor: pointer;
+
+        }
+        .box3:hover {
+            filter: sepia(1);
+            cursor: pointer;
+        }
+        .box4:hover {
+            filter: saturate(2);
+            cursor: all-scroll;
+        }
+        .box5:hover {
+            filter: brightness(.8);
+            cursor: zoom-in;
+        }
+        .box6:hover {
+            filter: contrast(2);
+            cursor: zoom-in;
+        }
+        .box7:hover {
+            filter: drop-shadow(2px 2px 1px red);
+            cursor: sw-resize;
+        }
+        .box8:hover {
+            filter: opacity(.1);
+            cursor: sw-resize;
+        }
+        .box9:hover {
+            filter: invert(1);
+            cursor: sw-resize;
+        }
+        .box10:hover {
+            filter: hue-rotate(240deg);
+            cursor: sw-resize;
+        }
+    </style>
+</head>
+<body>
+<p>模糊</p>
+<div class="box box1">你的模样</div>
+<br>
+<p>灰度</p>
+<div class="box box2">你的模样</div>
+<br>
+<p>褐色（复古旧调）</p>
+<div class="box box3">你的模样</div>
+<br>
+<p>饱和度</p>
+<div class="box box4">你的模样</div>
+<br>
+<p>亮度</p>
+<div class="box box5">你的模样</div>
+<br>
+<p>对比度</p>
+<div class="box box6">你的模样</div>
+<br>
+<p>阴影</p>
+<div class="box box7">你的模样</div>
+<br>
+<p>透明度</p>
+<div class="box box8">你的模样</div>
+<br>
+<p>反色</p>
+<div class="box box9">你的模样</div>
+<br>
+<p>色调旋转</p>
+<div class="box box10">你的模样</div>
+<br>
+</body>
+</html>
