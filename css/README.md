@@ -9,7 +9,7 @@ shape-outside 属性指定使用下面列表的值来定义浮动元素的浮动
 url(xx.png)、渐变等。
 
 ## 滤镜 filter
-<a href='./filter.html'>demo look</a>
+<a href='./filter.html' target='_blank'>demo look</a>
 [demo展示](./filter.html)
 
 1、灰度 || grayscale ，值为0-1之间小数，也支持百分比；
