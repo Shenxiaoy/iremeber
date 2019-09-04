@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+	<title>Title</title>
+	<style>
+		.box {
+			width: 200px;
+			height: 200px;
+			background-color: #2B303B;
+		}
+	</style>
+</head>
+<body>
+<div class="box" id="box">
+
+</div>
+<script>
+var block = document.querySelector('#box')
+block.addEventListener('touchstart', function (e) {
+  e.preventDefault()
+  console.log(e)
+}, false)
+block.addEventListener('click', function (e) {
+  console.log((+new Date()))
+  }, false
+)
+</script>
+</body>
+</html>

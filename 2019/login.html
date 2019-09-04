@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>国美多业态O2O系统</title>
+	<style>
+		html, body, div, ul, li, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ol, form, input, textarea, th, td, select {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: "Microsoft YaHei";
+			font-size:14px;
+			color:#333;
+		}
+		h1, h2, h3, h4, h5, h6{font-weight:normal;}
+		ul,ol {
+			list-style: none;
+		}
+
+		img {
+			border: none;
+			vertical-align: middle;
+		}
+
+		a {
+			text-decoration: none;
+			color: #232323;
+		}
+
+		input, textarea {
+			outline: none;
+			border: none;
+		}
+
+		textarea {
+			resize: none;
+			overflow: auto;
+		}
+
+		html, body {
+			width: 100%;
+			height: 100%;
+			background: rgb(245, 250, 255);
+		}
+		#app {
+			width: 100%;
+			height: 100%;
+		}
+
+		.login-form {
+			width: 340px;
+			height: 440px;
+			background: #ffffff;
+			position: absolute;
+			right: 182px;
+			top: 162px;
+			/*224 239 255*/
+			box-shadow: 0 5px 15px 0 rgb(224, 239, 255);
+		}
+		.login-box {
+			padding: 0 34px;
+			/*position: relative;*/
+		}
+		.login-log{
+			margin-top: 47px;
+		}
+		.login-title {
+			font-weight: bold;
+			margin-top: 2px;
+		}
+		.login-form-input {
+			margin-top: 40px;
+		}
+		.login-message {
+			display: flex;
+			justify-content: space-between;
+		}
+		.text-msg {
+			color: rgb(184,184,184);
+			font-size: 13px;
+		}
+
+		.login-illustration {
+			position: absolute;
+			left: 130px;
+			top: 90px;
+		}
+		.login-input {
+			border: 1px solid #e6e6e6;
+			padding: 8px;
+			border-radius: 3px;
+			width: 100%;
+		}
+		.login-input span {
+			display: inline-block;
+			margin-right: 5px;
+			border-right: 1px solid #e6e6e6;
+			padding-right: 8px;
+		}
+		.form-input {
+			display: inline-block;
+			width: 85%;
+		}
+		.login-input img {
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+		}
+		.login-stay {
+			display: flex;
+			align-items: center;
+		}
+		.login-stay input {
+			display: inline-block;
+			margin-right: 5px;
+		}
+		.login-button  {
+			display: block;
+			width: 100%;
+			height: 30px;
+			background: rgb(83, 160, 247);
+			border-radius: 3px;
+			cursor: pointer;
+		}
+		.login-button button {
+			width: 100%;
+			background: rgb(83, 160, 247);
+			color: #ffffff;
+			border-style: none;
+			line-height: 30px;
+			cursor: pointer;
+
+		}
+	</style>
+</head>
+<body>
+<div id="app">
+	<div class="login-form">
+		<div class="login-box">
+			<div class="login-log"><img src="./static/logo.png" alt=""></div>
+			<div class="login-title">国美多业态O2O系统</div>
+			<div class="login-form-input">
+				<div class="login-input">
+					<span><img src="./static/username.png" alt=""></span>
+					<input class="form-input" type="text" id="username">
+				</div>
+				<div style="height: 10px"></div>
+				<div class="login-input">
+					<span><img src="./static/paw.png" alt=""></span>
+					<input class="form-input" type="password" id="password">
+				</div>
+			</div>
+			<div style="height: 8px"></div>
+			<div class="login-message">
+				<div class="login-stay"><input type="checkbox" type="submit"><span class="text-msg">保持登录</span></div>
+				<div><span class="text-msg">忘记密码</span></div>
+			</div>
+			<div style="height: 40px"></div>
+			<div class="login-button"><button>登录</button></div>
+		</div>
+	</div>
+
+	<div class="login-illustration">
+		<img src="./static/illustration.png" alt="">
+	</div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

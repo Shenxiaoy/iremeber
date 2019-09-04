@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上传下载</title>
+</head>
+<body>
+<div>
+	<div><input type="file" id="upload1" style="display: none"></div>
+	<div><button type="button" id="button">上传</button></div>
+</div>
+<br>
+<div>
+	<p>下载test</p>
+	<div>
+		<a href="" download="text.xls">下载</a>
+	</div>
+</div>
+</body>
+<script>
+/*
+* 上传两种方式上传，使用formData 或 fileReader 进行上传操作
+* @ readAsText(file) 读取text 文本内容
+* @ readAsArrayBuffer(file) 读取文件转为二进制流
+*
+* 下载 可以通过a标签 download 的属性
+* window.URL.createObjectURL 可以把后端返回的 二进制 转为a 标签的下载链接
+* 当接受到文件数据不为 blob 对象的时候, 可以通过使用 new Blob([data]) 转换为 blob 对象。
+**/
+const upload1 = document.querySelector('#upload1')
+const button = document.querySelector('#button')
+upload1.addEventListener('change', function (e) {
+  const file = e.target.files[0]
+  const reader = new FileReader()
+  // reader.readAsText(file, 'UTF-8')
+  reader.readAsArrayBuffer(file)
+  reader.onload = function () {
+    console.log(reader.result)
+
+  }
+})
+button.addEventListener('click', function (e) {
+  upload1.click()
+})
+
+/*
+formData 方式
+*/
+/*
+uploadFile(fileInput) {
+  const file = fileInput.target.file[0];
+  const formData = new FormData();
+  formData.append("file", formData);
+  axios({
+	method: "post",
+	url: '...',
+	data: formData
+  });
+}
+*/
+
+</script>
+</html>
